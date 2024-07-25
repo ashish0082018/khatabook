@@ -11,17 +11,18 @@
     <div class="flex justify-between">  
         <div>Khaatabook</div>
         <div class=" flex gap-3">
-         <button>Home</button>
-         <button>Create New Hisaab</button>
+            <a class="tracking-tight" href="/">Home</a>
+            <a class="tracking-tight" href="/create">Create New Hisaab</a>
         </div>
          </div>
          <div> 
          <div class="mt-8">hisaab of 
-            <span class="text-blue-600 font-bold">12-08-2024</span>
+            <span class="text-blue-600 font-bold"> <%= filename.split(".")[0] %> </span>
              date
          </div>
-         <p>aata,dal,cheeni </p>
-         <button class="text-zinc-200 px-3 py-2 mt-4">Edit Hisaab</button>
+         <p><%= filedata %> </p>
+       
+         <a  href="/edit/<%= filename %>"  class="text-zinc-200 px-3 py-2 mt-4">Edit Hisaab</a>
         </div>
 </body>
 </html>
